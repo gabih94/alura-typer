@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/libs/materialize.min.css">
+    <link rel="stylesheet" href="./css/libs/google-fonts.css">
+    <link rel="stylesheet" href="./css/libs/selectize.default.css">
+    <link rel="stylesheet" href="./css/libs/tooltipster.bundle.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta repellat ipsum est repellendus labore mollitia molestiae aspernatur, illum placeat adipisci sint laboriosam! Dignissimos asperiores magnam illum molestiae ut saepe.</p>
+        
+        <div class="center">
+            <img src="./img/spinner.gif" alt="spinner" id="spiner">
+            <p id="erro">Ocorreu um erro, por favor tente novamente.</p>
+
+        </div>
+
+        <ul class="informacoes center">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanhoFrase">5</span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="tempoDigitacao">10</span> segundos
+            </li>
+        </ul>
+    
+        <textarea class="campoDigitacao" cols="40" rows="8"></textarea>
+
+        <div class="botao">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="reiniciar">
+                <i class="material-icons">restore</i>
+            </a>
+            <a class="btn-floating btn-large waves-effect waves-light green" id="botaoPlacar">
+                <i class="material-icons">assignment</i>
+            </a>
+            <a class="btn-floating btn-large waves-effect waves-light blue" id="botaoFrase">
+                <i class="material-icons">shuffle</i>
+            </a>
+            <a class="btn-floating btn-large waves-effect waves-light cyan" id="botaoFraseId">
+                <i class="material-icons">repeat_one</i>
+            </a>
+            <input type="number" id="fraseId" min="0">
+
+            <div class="selectUsuarios">
+                <select id="usuarios">
+                    <option value="Gabriela">Gabriela</option>
+                </select>
+            </div>
+            <a class=" tooltip btn-floating btn-large waves-effect waves-light yellow" id="botaoSync" title="Sincronizado com sucesso!">
+                <i class="material-icons">swap_vert</i>
+            </a>
+        </div>
+    
+        <ul class="center">
+            <li><span id="contadorCaracteres">0</span> caracteres</li>
+            <li><span id="contadorPalavras">0</span> palavras </li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bodered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nº de palavras</th>
+                        <th>Remover?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                </tbody>
+            </table>
+
+        </section>
+    </div>
+
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/placar.js"></script>
+    <script src="./js/frase.js"></script>
+    <script src="./js/selectize.js"></script>
+    <script src="./js/tooltipster.bundle.min.js"></script>
+</body>
+</html>

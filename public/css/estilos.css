@@ -1,0 +1,65 @@
+body{
+    overflow: scroll;
+}
+
+.frase{
+    font-size: 20px;
+    text-align: left;
+}
+
+#erro{
+    font-weight: bold;
+    color: red;
+    display: none;
+}
+
+#spiner{
+    display: none;
+}
+
+.icones{
+    vertical-align: middle;
+}
+
+#botaoSync{
+    float: right;
+}
+
+.campoDigitacao{
+    font-size: 20px;
+    height: 130px;
+    border: 3px solid #000000;
+}
+
+.campoDesativado{
+    background-color: #BBBBBB;
+}
+
+.campoCorreto{
+    border: 3px solid green;
+}
+.campoErrado{
+    border: 3px solid red;
+}
+
+#fraseId{
+    width: 40px;
+}
+
+.placar{
+    display: none;
+}
+
+.selectUsuarios{
+    display: inline-block;
+    width: 150px;
+}
+
+.selectize-input{
+    width: 150px;
+    vertical-align: middle;
+}
+
+#usuarios{
+    display: block;
+}

@@ -1,7 +1,3 @@
-## alura-typer
+# alura-typer
+Mini project: A type racer like game
 
-```
-Página feita em curso do site Alura!
-```
-
-link: https://gabih94.github.io/alura-typer/
